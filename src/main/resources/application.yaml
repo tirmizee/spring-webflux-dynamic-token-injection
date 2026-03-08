@@ -1,0 +1,15 @@
+spring.application.name: demo
+external-services:
+
+  # Auth Server ???????? Token
+  auth-provider:
+    base-url: https://auth.provider.com
+    token-path: /v1/oauth/token
+    client-id: ${AUTH_CLIENT_ID:my-default-id}
+    client-secret: ${AUTH_CLIENT_SECRET:my-default-secret}
+
+  # Business API ???????????????????
+  product-api:
+    base-url: https://api.provider.com
+    get-product-path: /v1/products
+    update-inventory-path: /v1/inventory
